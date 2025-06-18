@@ -13,7 +13,7 @@ CREATE TABLE LibraryUsers(
 create table authors (
     authorId int primary key auto_increment,
     name varchar(100) not null,
-    email varchar(100) not null unique,
+    email varchar(100) not null unique
 );
 
 create table books(
@@ -47,7 +47,7 @@ create table loans(
 
 -- table for (one to one)
 
-create table return(
+create table returnTable(
 returnId int primary key auto_increment,
 loanId int not null,
 returnDate date not null,
